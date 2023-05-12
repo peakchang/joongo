@@ -1,0 +1,37 @@
+{
+  "name": "bunyangmon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start server.js -i 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pcy",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.3.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
